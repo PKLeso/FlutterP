@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:appcenter/appcenter.dart';
-import 'package:appcenter_analytics/appcenter_analytics.dart';
-import 'package:appcenter_crashes/appcenter_crashes.dart';
+// import 'package:appcenter/appcenter.dart';
+// import 'package:appcenter_analytics/appcenter_analytics.dart';
+// import 'package:appcenter_crashes/appcenter_crashes.dart';
 import 'package:flutter/foundation.dart';
 
 void main() {
@@ -52,17 +52,17 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  void initAppcenter() async {
-    final ios = defaultTargetPlatform == TargetPlatform.iOS;
-    var app_secret = ios ? "iosGuid" : "556e004b-7c13-46f2-ab8f-56fdbd127b9c";
-    await AppCenter.start(app_secret, [AppCenterAnalytics.id, AppCenterCrashes.id]);
-  }
+  // void initAppcenter() async {
+  //   final ios = defaultTargetPlatform == TargetPlatform.iOS;
+  //   var app_secret = ios ? "iosGuid" : "556e004b-7c13-46f2-ab8f-56fdbd127b9c";
+  //   await AppCenter.start(app_secret, [AppCenterAnalytics.id, AppCenterCrashes.id]);
+  // }
 
-  @override
-  void initState() {
-    super.initState();
-    initAppcenter();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   initAppcenter();
+  // }
 
   void _incrementCounter() {
     setState(() {
